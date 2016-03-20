@@ -1,0 +1,4 @@
+<Features>
+	<Feature name="Door" type="Door"/>
+	<Feature name="Golden Door" type="Door" color="255,215,0"/>
+</Features>

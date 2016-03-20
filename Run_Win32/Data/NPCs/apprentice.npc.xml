@@ -1,0 +1,9 @@
+<NPC name="Apprentice" faction="Human" health="20" glyph="A" color="255,0,100" bravery="1.0" canYellForHelp="false" canUseFeatures="true">
+	<AIBehavior name="Wander" />
+	<AIBehavior name="Chase" />
+	<AIBehavior name="Follow" leadername="You" distanceThreshold="0"/>
+	<AIBehavior name="Retreat" />
+	<AIBehavior name="RetreatToAlly" />
+	<AIBehavior name="PickUpItem" />
+	<AIBehavior name="MeleeAttack" attack="slashed" minDamage="3" maxDamage="5"/>
+</NPC>

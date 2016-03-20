@@ -1,0 +1,8 @@
+<NPC name="Spider" faction="Arachnid" health="10" glyph="S" color="200,255,0" bravery="0.5" canYellForHelp="false" canUseFeatures="false">
+	<AIBehavior name="Wander" />
+	<AIBehavior name="Chase" />
+	<AIBehavior name="Retreat" />
+	<AIBehavior name="RetreatToAlly" />
+	<AIBehavior name="DefendLocation" />
+	<AIBehavior name="MeleeAttack" attack="bit" minDamage="2" maxDamage="5"/>
+</NPC>

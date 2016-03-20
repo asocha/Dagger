@@ -1,0 +1,7 @@
+<Armor>
+	<Item name="Breastplate of Dagger Deflection" type="Armor" equip="Chest" damageReductionPercent="0.2" />
+	<Item name="Boots of Dexterity" type="Armor" equip="Feet" damageReductionPercent="0.1" />
+	<Item name="Helm of Damage Reduction" type="Armor" equip="Head" damageReductionPercent="0.15" />
+	<Item name="Pants of Dodge" type="Armor" equip="Legs" damageReductionPercent="0.1" />
+	<Item name="Leather Gloves" type="Armor" equip="Hands" damageReductionPercent="0.05" />
+</Armor>

@@ -1,0 +1,7 @@
+<Weapons>
+	<Item name="Dagger" type="Weapon" equip="Weapon" minDamage="3" maxDamage="5" />
+	<Item name="Mace" type="Weapon" equip="Weapon" minDamage="1" maxDamage="4" />
+	<Item name="Sword" type="Weapon" equip="Weapon" minDamage="2" maxDamage="4" />
+	<Item name="Axe" type="Weapon" equip="Weapon" minDamage="2" maxDamage="3" />
+	<Item name="Knife" type="Weapon" equip="Weapon" minDamage="1" maxDamage="2" />
+</Weapons>

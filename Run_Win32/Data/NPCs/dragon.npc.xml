@@ -1,0 +1,6 @@
+<NPC name="Dragon" faction="Dragon" health="25" glyph="D" color="255,100,100" bravery="2.0" canYellForHelp="false" canUseFeatures="true">
+	<AIBehavior name="Wander" />
+	<AIBehavior name="Chase" />
+	<AIBehavior name="DefendLocation" />
+	<AIBehavior name="MeleeAttack" attack="engulfed" minDamage="5" maxDamage="9"/>
+</NPC>

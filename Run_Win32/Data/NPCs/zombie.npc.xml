@@ -1,0 +1,9 @@
+<NPC name="Zombie" faction="Undead" health="15" glyph="Z" color="150,150,150" bravery="1.0" canYellForHelp="true" canUseFeatures="true">
+	<AIBehavior name="Wander" />
+	<AIBehavior name="Chase" />
+	<AIBehavior name="Retreat" />
+	<AIBehavior name="RetreatToAlly" />
+	<AIBehavior name="DefendLocation" />
+	<AIBehavior name="PickUpItem" />
+	<AIBehavior name="MeleeAttack" attack="clawed" minDamage="3" maxDamage="7"/>
+</NPC>

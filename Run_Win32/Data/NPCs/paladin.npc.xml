@@ -1,0 +1,10 @@
+<NPC name="Zombie Paladin" faction="Undead" health="22" glyph="P" color="255,105,180" bravery="1.5" canYellForHelp="true" canUseFeatures="true">
+	<AIBehavior name="Wander" />
+	<AIBehavior name="Chase" />
+	<AIBehavior name="Retreat" />
+	<AIBehavior name="RetreatToAlly" />
+	<AIBehavior name="DefendLocation" />
+	<AIBehavior name="PickUpItem" />
+	<AIBehavior name="MeleeAttack" attack="smacked" minDamage="3" maxDamage="5"/>
+	<AIBehavior name="InvulnerabilityBuff" range="4" duration="5"/>
+</NPC>

@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugInline|Win32">
+      <Configuration>DebugInline</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DAC178BE-190E-41E9-84CB-F7C8771F6FCE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PrototypeGame</RootNamespace>
+    <ProjectName>Dagger</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /F /I "$(OutDir)$(TargetFileName)" "$(SolutionDir)..\Run_$(Platform)\"</Command>
+      <Message>Copying $(TargetFileName) to Run_$(Platform)</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /F /I "$(OutDir)$(TargetFileName)" "$(SolutionDir)..\Run_$(Platform)\"</Command>
+      <Message>Copying $(TargetFileName) to Run_$(Platform)</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /F /I "$(OutDir)$(TargetFileName)" "$(SolutionDir)..\Run_$(Platform)"</Command>
+      <Message>Copying $(TargetFileName) to Run_$(Platform)</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AIBehaviors\AOEBuffBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\BaseAIBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\ChaseBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\DefendLocationBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\FollowBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\HealAllyBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\InvulnerabilityBuffBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\MeleeAttackBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\PickUpItemBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\RetreatBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\RetreatToAllyBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\SummonAllyBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\TeleportBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\TurnUndeadBehavior.cpp" />
+    <ClCompile Include="AIBehaviors\WanderBehavior.cpp" />
+    <ClCompile Include="AISystem.cpp" />
+    <ClCompile Include="CombatSystem.cpp" />
+    <ClCompile Include="Entities\Actor.cpp" />
+    <ClCompile Include="Entities\Entity.cpp" />
+    <ClCompile Include="Entities\Feature.cpp" />
+    <ClCompile Include="Entities\Item.cpp" />
+    <ClCompile Include="Entities\NPC.cpp" />
+    <ClCompile Include="Entities\Player.cpp" />
+    <ClCompile Include="Faction.cpp" />
+    <ClCompile Include="Factories\FeatureFactory.cpp" />
+    <ClCompile Include="Factories\ItemFactory.cpp" />
+    <ClCompile Include="Factories\NPCFactory.cpp" />
+    <ClCompile Include="Generators\BaseMapGenerator.cpp" />
+    <ClCompile Include="Generators\CatacombsMapGenerator.cpp" />
+    <ClCompile Include="Generators\CellularAutomatonMapGenerator.cpp" />
+    <ClCompile Include="Generators\DungeonMapGenerator.cpp" />
+    <ClCompile Include="Generators\FromDataMapGenerator.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="Main_Win32.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MessageBar.cpp" />
+    <ClCompile Include="Pathfinding.cpp" />
+    <ClCompile Include="StatusBar.cpp" />
+    <ClCompile Include="TheApp.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="ViewFinding.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AIBehaviors\AOEBuffBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\BaseAIBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\ChaseBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\DefendLocationBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\FollowBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\HealAllyBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\InvulnerabilityBuffBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\MeleeAttackBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\PickUpItemBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\RetreatBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\RetreatToAllyBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\SummonAllyBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\TeleportBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\TurnUndeadBehavior.hpp" />
+    <ClInclude Include="AIBehaviors\WanderBehavior.hpp" />
+    <ClInclude Include="AISystem.hpp" />
+    <ClInclude Include="CombatSystem.hpp" />
+    <ClInclude Include="Entities\Actor.hpp" />
+    <ClInclude Include="Entities\Entity.hpp" />
+    <ClInclude Include="Entities\Feature.hpp" />
+    <ClInclude Include="Entities\Item.hpp" />
+    <ClInclude Include="Entities\NPC.hpp" />
+    <ClInclude Include="Entities\Player.hpp" />
+    <ClInclude Include="Faction.hpp" />
+    <ClInclude Include="Factories\FeatureFactory.hpp" />
+    <ClInclude Include="Factories\ItemFactory.hpp" />
+    <ClInclude Include="Factories\NPCFactory.hpp" />
+    <ClInclude Include="Generators\BaseMapGenerator.hpp" />
+    <ClInclude Include="Generators\CatacombsMapGenerator.hpp" />
+    <ClInclude Include="Generators\CellularAutomatonMapGenerator.hpp" />
+    <ClInclude Include="Generators\DungeonMapGenerator.hpp" />
+    <ClInclude Include="Generators\FromDataMapGenerator.hpp" />
+    <ClInclude Include="Inventory.hpp" />
+    <ClInclude Include="Map.hpp" />
+    <ClInclude Include="MessageBar.hpp" />
+    <ClInclude Include="Pathfinding.hpp" />
+    <ClInclude Include="StatusBar.hpp" />
+    <ClInclude Include="TheApp.hpp" />
+    <ClInclude Include="Game.hpp" />
+    <ClInclude Include="Tile.hpp" />
+    <ClInclude Include="ViewFinding.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Engine\Engine.vcxproj">
+      <Project>{9ecd80bf-9ee5-4d54-a1d0-de9bae65431b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ReadMe.txt" />
+    <None Include="..\Socha_DFS_Proposal.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Run_Win32\Data\factions.xml" />
+    <Xml Include="..\Run_Win32\Data\Features\features.feature.xml" />
+    <Xml Include="..\Run_Win32\Data\Items\Armor.item.xml" />
+    <Xml Include="..\Run_Win32\Data\Items\Potions.item.xml" />
+    <Xml Include="..\Run_Win32\Data\Items\Weapons.item.xml" />
+    <Xml Include="..\Run_Win32\Data\Maps\saveGame.xml" />
+    <Xml Include="..\Run_Win32\Data\NPCs\apprentice.npc.xml" />
+    <Xml Include="..\Run_Win32\Data\NPCs\dragon.npc.xml" />
+    <Xml Include="..\Run_Win32\Data\NPCs\murloc.npc.xml" />
+    <Xml Include="..\Run_Win32\Data\NPCs\orc.npc.xml" />
+    <Xml Include="..\Run_Win32\Data\NPCs\orcShaman.npc.xml" />
+    <Xml Include="..\Run_Win32\Data\NPCs\paladin.npc.xml" />
+    <Xml Include="..\Run_Win32\Data\NPCs\skeleton.npc.xml" />
+    <Xml Include="..\Run_Win32\Data\NPCs\spider.npc.xml" />
+    <Xml Include="..\Run_Win32\Data\NPCs\vampireLord.npc.xml" />
+    <Xml Include="..\Run_Win32\Data\NPCs\zombie.npc.xml" />
+    <Xml Include="..\Run_Win32\Data\Saves\saveGame.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

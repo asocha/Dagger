@@ -1,0 +1,66 @@
+<Factions>
+	<Faction name="Player">
+		<Faction name="Human" status="Friendly" />
+		
+		<Faction name="Arachnid" status="Hated" />
+		<Faction name="Dragon" status="Hated" />
+		<Faction name="Murloc" status="Hated" />
+		<Faction name="Orc" status="Hated" />
+		<Faction name="Undead" status="Hated" />
+	</Faction>
+	<Faction name="Human">
+		<Faction name="Player" status="Friendly" />
+		
+		<Faction name="Arachnid" status="Hated" />
+		<Faction name="Dragon" status="Hated" />
+		<Faction name="Murloc" status="Hated" />
+		<Faction name="Orc" status="Hated" />
+		<Faction name="Undead" status="Hated" />
+	</Faction>
+	
+	<Faction name="Arachnid">
+		<Faction name="Player" status="Hated" />
+		<Faction name="Human" status="Hated" />
+		
+		<Faction name="Dragon" status="Friendly" />
+		<Faction name="Murloc" status="Hated" />
+		<Faction name="Orc" status="Friendly" />
+		<Faction name="Undead" status="Friendly" />
+	</Faction>
+	<Faction name="Dragon">
+		<Faction name="Player" status="Hated" />
+		<Faction name="Human" status="Hated" />
+		
+		<Faction name="Arachnid" status="Friendly" />
+		<Faction name="Murloc" status="Hated" />
+		<Faction name="Orc" status="Friendly" />
+		<Faction name="Undead" status="Friendly" />
+	</Faction>
+	<Faction name="Murloc">
+		<Faction name="Player" status="Hated" />
+		<Faction name="Human" status="Hated" />
+		
+		<Faction name="Arachnid" status="Hated" />
+		<Faction name="Dragon" status="Hated" />
+		<Faction name="Orc" status="Hated" />
+		<Faction name="Undead" status="Hated" />
+	</Faction>
+	<Faction name="Orc">
+		<Faction name="Player" status="Hated" />
+		<Faction name="Human" status="Hated" />
+		
+		<Faction name="Arachnid" status="Friendly" />
+		<Faction name="Dragon" status="Friendly" />
+		<Faction name="Murloc" status="Hated" />
+		<Faction name="Undead" status="Friendly" />
+	</Faction>
+	<Faction name="Undead">
+		<Faction name="Player" status="Hated" />
+		<Faction name="Human" status="Hated" />
+		
+		<Faction name="Arachnid" status="Friendly" />
+		<Faction name="Dragon" status="Friendly" />
+		<Faction name="Murloc" status="Hated" />
+		<Faction name="Orc" status="Friendly" />
+	</Faction>
+</Factions>

@@ -1,0 +1,9 @@
+<NPC name="Orc" faction="Orc" health="15" glyph="O" color="0,255,100" bravery="1.0" canYellForHelp="true" canUseFeatures="true">
+	<AIBehavior name="Wander" />
+	<AIBehavior name="Chase" />
+	<AIBehavior name="Retreat" />
+	<AIBehavior name="RetreatToAlly" />
+	<AIBehavior name="DefendLocation" />
+	<AIBehavior name="PickUpItem" />
+	<AIBehavior name="MeleeAttack" attack="bludgeoned" minDamage="4" maxDamage="7"/>
+</NPC>

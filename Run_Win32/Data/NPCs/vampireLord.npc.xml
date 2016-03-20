@@ -1,0 +1,10 @@
+<NPC name="Vampire Lord" faction="Undead" health="18" glyph="V" color="200,0,200" bravery="1.5" canYellForHelp="true" canUseFeatures="true">
+	<AIBehavior name="Wander" chanceToRest="0.0"/>
+	<AIBehavior name="Teleport" healthThreshold="0.5" numUses="2" chance="0.5" phrase="turns to mist"/>
+	<AIBehavior name="Chase" />
+	<AIBehavior name="PickUpItem" />
+	<AIBehavior name="Retreat" />
+	<AIBehavior name="RetreatToAlly" />
+	<AIBehavior name="DefendLocation" />
+	<AIBehavior name="MeleeAttack" attack="glared at" minDamage="4" maxDamage="7"/>
+</NPC>

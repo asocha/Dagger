@@ -1,0 +1,10 @@
+<NPC name="Murloc" faction="Dragon" health="10" glyph="M" color="0,200,255" bravery="0.5" canYellForHelp="true" canUseFeatures="true">   <!-- Dragon faction for testing so there is no monster-on-monster combat -->
+	<AIBehavior name="Wander" />
+	<AIBehavior name="Chase" />
+	<AIBehavior name="Retreat" />
+	<AIBehavior name="RetreatToAlly" />
+	<AIBehavior name="DefendLocation" />
+	<AIBehavior name="PickUpItem" />
+	<AIBehavior name="MeleeAttack" attack="slashed" minDamage="2" maxDamage="5" />
+	<AIBehavior name="SummonAlly" ally="murloc" />
+</NPC>

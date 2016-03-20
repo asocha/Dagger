@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GameCode">
+      <UniqueIdentifier>{b0fb082a-77de-47bb-9fb5-32f19e7ac476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode\Generators">
+      <UniqueIdentifier>{eca77be4-eaad-4c38-8f73-580bb889b185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{9f42c314-08e1-493e-9b1e-8a18e194aa98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Maps">
+      <UniqueIdentifier>{77e18e24-777f-4dff-9345-39c89917656a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode\Entities">
+      <UniqueIdentifier>{5d12a1f5-a979-4717-89ea-f5e8ada0f6f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode\AIBehaviors">
+      <UniqueIdentifier>{6e4ff63b-b8fa-4795-b53a-ffa9dc298f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\NPCs">
+      <UniqueIdentifier>{f944822a-bfea-4ab7-ba81-38162b42beba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Items">
+      <UniqueIdentifier>{91d2232d-dade-457a-bfdc-405d4fd7c3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode\Factories">
+      <UniqueIdentifier>{7639c759-8074-4935-bd7d-d23edd62be0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Features">
+      <UniqueIdentifier>{6fde60fa-568d-4751-8919-0ce4f06c6232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Saves">
+      <UniqueIdentifier>{dc6cabb6-70cc-4c63-8d90-a404d7d947fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main_Win32.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="TheApp.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Generators\BaseMapGenerator.cpp">
+      <Filter>GameCode\Generators</Filter>
+    </ClCompile>
+    <ClCompile Include="Generators\CellularAutomatonMapGenerator.cpp">
+      <Filter>GameCode\Generators</Filter>
+    </ClCompile>
+    <ClCompile Include="Generators\DungeonMapGenerator.cpp">
+      <Filter>GameCode\Generators</Filter>
+    </ClCompile>
+    <ClCompile Include="Generators\FromDataMapGenerator.cpp">
+      <Filter>GameCode\Generators</Filter>
+    </ClCompile>
+    <ClCompile Include="Pathfinding.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewFinding.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\BaseAIBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\WanderBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\ChaseBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\MeleeAttackBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="CombatSystem.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBar.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBar.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Faction.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\SummonAllyBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Factories\FeatureFactory.cpp">
+      <Filter>GameCode\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Actor.cpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Entity.cpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Feature.cpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Item.cpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\NPC.cpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Player.cpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Factories\ItemFactory.cpp">
+      <Filter>GameCode\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="Factories\NPCFactory.cpp">
+      <Filter>GameCode\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\PickUpItemBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AISystem.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\RetreatBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\RetreatToAllyBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\DefendLocationBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\HealAllyBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\FollowBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\TeleportBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\TurnUndeadBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Generators\CatacombsMapGenerator.cpp">
+      <Filter>GameCode\Generators</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\AOEBuffBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="AIBehaviors\InvulnerabilityBuffBehavior.cpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TheApp.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Generators\BaseMapGenerator.hpp">
+      <Filter>GameCode\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="Generators\CellularAutomatonMapGenerator.hpp">
+      <Filter>GameCode\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="Generators\DungeonMapGenerator.hpp">
+      <Filter>GameCode\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="Generators\FromDataMapGenerator.hpp">
+      <Filter>GameCode\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="Pathfinding.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewFinding.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\BaseAIBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\WanderBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\ChaseBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\MeleeAttackBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="CombatSystem.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBar.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBar.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Faction.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\SummonAllyBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Factories\FeatureFactory.hpp">
+      <Filter>GameCode\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Actor.hpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Entity.hpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Feature.hpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Item.hpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\NPC.hpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Player.hpp">
+      <Filter>GameCode\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Factories\ItemFactory.hpp">
+      <Filter>GameCode\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="Factories\NPCFactory.hpp">
+      <Filter>GameCode\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\PickUpItemBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AISystem.hpp">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\RetreatBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\RetreatToAllyBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\DefendLocationBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\HealAllyBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\FollowBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\TeleportBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\TurnUndeadBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Generators\CatacombsMapGenerator.hpp">
+      <Filter>GameCode\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\AOEBuffBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="AIBehaviors\InvulnerabilityBuffBehavior.hpp">
+      <Filter>GameCode\AIBehaviors</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ReadMe.txt" />
+    <None Include="..\Socha_DFS_Proposal.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Run_Win32\Data\NPCs\dragon.npc.xml">
+      <Filter>Data\NPCs</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\NPCs\murloc.npc.xml">
+      <Filter>Data\NPCs</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\NPCs\orc.npc.xml">
+      <Filter>Data\NPCs</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\NPCs\spider.npc.xml">
+      <Filter>Data\NPCs</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\NPCs\zombie.npc.xml">
+      <Filter>Data\NPCs</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\factions.xml">
+      <Filter>Data</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\Items\Potions.item.xml">
+      <Filter>Data\Items</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\Items\Weapons.item.xml">
+      <Filter>Data\Items</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\Features\features.feature.xml">
+      <Filter>Data\Features</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\Items\Armor.item.xml">
+      <Filter>Data\Items</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\Saves\saveGame.xml">
+      <Filter>Data\Saves</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\Maps\saveGame.xml">
+      <Filter>Data\Maps</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\NPCs\orcShaman.npc.xml">
+      <Filter>Data\NPCs</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\NPCs\vampireLord.npc.xml">
+      <Filter>Data\NPCs</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\NPCs\skeleton.npc.xml">
+      <Filter>Data\NPCs</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\NPCs\paladin.npc.xml">
+      <Filter>Data\NPCs</Filter>
+    </Xml>
+    <Xml Include="..\Run_Win32\Data\NPCs\apprentice.npc.xml">
+      <Filter>Data\NPCs</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

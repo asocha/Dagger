@@ -1,0 +1,11 @@
+<NPC name="Orc Shaman" faction="Orc" health="15" glyph="O" color="0,100,255" bravery="1.0" canYellForHelp="true" canUseFeatures="true">
+	<AIBehavior name="Wander" />
+	<AIBehavior name="Chase" />
+	<AIBehavior name="Retreat" />
+	<AIBehavior name="RetreatToAlly" />
+	<AIBehavior name="DefendLocation" />
+	<AIBehavior name="PickUpItem" />
+	<AIBehavior name="MeleeAttack" attack="bludgeoned" minDamage="3" maxDamage="5"/>
+	<AIBehavior name="AOEBuff" radius="4" health="8" minDamage="2" maxDamage="4"/>
+	<AIBehavior name="HealAlly" minHealing="3" maxHealing="5" range="3"/>
+</NPC>

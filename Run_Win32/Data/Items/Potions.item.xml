@@ -1,0 +1,4 @@
+<Potions>
+	<Item name="Healing Potion" type="Consumable" healing="10" />
+	<Item name="Extreme Healing Potion" type="Consumable" healing="20" />
+</Potions>
